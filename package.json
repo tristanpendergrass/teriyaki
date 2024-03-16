@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "@types/leaflet": "^1.9.8",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "parcel": "^2.11.0",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "postcss": "^8.4.33",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "leaflet": "^1.9.4",
+    "leaflet.markercluster": "^1.5.3",
+    "npm": "^10.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10",
+    "react-leaflet": "^4.2.1"
+  },
+  "scripts": {
+    "start": "npx parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir docs --public-url https://www.tristanpendergrass.com/teriyaki/"
+  }
+}
