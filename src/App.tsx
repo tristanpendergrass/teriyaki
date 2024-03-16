@@ -57,6 +57,11 @@ export function App() {
                       </div>
                     </a>
                   </div>
+                  <ul className="list-disc ml-4">
+                    {store.summary.map((line) => (
+                      <li>{line}</li>
+                    ))}
+                  </ul>
                 </Popup>
               </Marker>
             );

@@ -8,11 +8,13 @@ export type TeriyakiStore = {
   coords: L.LatLngExpression;
   youtubeLink: string;
   googleMapsLink: string;
+  summary: Array<string>;
 };
 
 export const STORES: TeriyakiStore[] = data.map((store: any) => {
   return {
     ...store,
-    coords: JSON.parse(store.coords), // The coords get parsed as a string like "[123, 456]" but our data wants it like [123, 456]
+    coords: store.coords.split(",").map(Number), // The coords get parsed as a string like "123, 456" but our data wants it like [123, 456]
+    summary: store.summary.split(/\r?\n/), // The summary comes as a single string separated by newlines
   };
 });
