@@ -13,12 +13,14 @@ const markerBlack = `
 
 export const Map: React.FC<{}> = () => {
   const handleMarkerClick = useCallback(() => {}, []);
+  const isMobile = window.innerWidth < 768;
+  const zoomLevel = isMobile ? 11 : 13;
 
   return (
     <MapContainer
       center={[47.6094054, -122.34183801]}
-      zoom={13}
-      className="h-full flex-grow"
+      zoom={zoomLevel}
+      className="h-full w-full"
     >
       <TileLayer url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" />
       <>
