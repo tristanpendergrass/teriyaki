@@ -7,6 +7,8 @@ A webpage mapping all of the teriyaki shops visited by [J. Kenji López-Alt](htt
 * Track all the places visited by Kenji on a map
 * Provide a summary of Kenji's analysis of the food for reference
 
+This webpage and code is a fan project and in no way associated with J. Kenji López-Alt.
+
 # Development
 
 ```
